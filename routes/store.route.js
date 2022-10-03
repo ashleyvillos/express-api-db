@@ -51,10 +51,6 @@ StoreRouter.delete('/store/:id', async (req, res) => {
     } else {
         return res.status(authenticate.status).send(authenticate)
     }
-
-
-
-    
 })
 
 module.exports = StoreRouter
