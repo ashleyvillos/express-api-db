@@ -1,5 +1,5 @@
 # Talk Innovations Training (backend)
-## This project uses postgresql database. Create a .env file with these configuration:  
+### This project uses postgresql database. Create a .env file with these configuration:  
   
 PORT = ??  
 database = 'db name here'  
