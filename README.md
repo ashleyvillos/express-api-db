@@ -9,3 +9,4 @@ host = 'server here'
 db_port = db port here  
 dialect = 'postgres'  
 RESET = 'false'  
+SECRET_KEY = 'SECRET_KEY_SAMPLE'
