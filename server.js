@@ -11,9 +11,11 @@ app.use(express.urlencoded({ extended: false}))
 
 // Modules
 const StoreRouter = require('./routes/store.route')
+const UserRouter = require('./routes/user.route')
 
 // Routing
 app.use(StoreRouter)
+app.use(UserRouter)
 
 
 // Authenticate if DB is connected
