@@ -7,7 +7,8 @@ const db = {
     password: process.env.password,
     host: process.env.host,
     port: process.env.db_port,
-    dialect: process.env.dialect
+    dialect: process.env.dialect,
+    logging: false
 }
 
 module.exports = new Sequelize(db)

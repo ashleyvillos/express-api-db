@@ -1,12 +1,12 @@
 const Sequelize = require('sequelize')
 const config = require('../config/config')
 
-const Store = config.define('Store', {
+const Product = config.define('Product', {
     name: {
         type: Sequelize.STRING,
         allowNull: true
     },
-    address: {
+    price: {
         type: Sequelize.STRING,
         allowNull: true
     },
@@ -17,5 +17,4 @@ const Store = config.define('Store', {
     }
 })
 
-
-module.exports = Store
+module.exports = Product

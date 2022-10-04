@@ -7,15 +7,17 @@ const dbContext = require('./services/db.context')
 
 // Middleware
 app.use(express.json())
-app.use(express.urlencoded({ extended: false}))
+app.use(express.urlencoded({ extended: false }))
 
 // Modules
 const StoreRouter = require('./routes/store.route')
 const UserRouter = require('./routes/user.route')
+const ProductRouter = require('./routes/product.route')
 
 // Routing
 app.use(StoreRouter)
 app.use(UserRouter)
+app.use(ProductRouter)
 
 
 // Authenticate if DB is connected
